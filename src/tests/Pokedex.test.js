@@ -44,6 +44,7 @@ describe('Testa o componente Pokedex', () => {
 
     const verificaBotaoTipo = screen.getByRole('button', { name: /all/i });
     userEvent.click(verificaBotaoTipo);
+    expect(verificaBotaoTipo).toHaveTextContent('All');
     // const totalbotoes = 7;
     // const verificaBotaoTipo = screen.getAllByTestId('pokemon-type-button');
     // expect(verificaBotaoTipo).toHaveLength(totalbotoes);
